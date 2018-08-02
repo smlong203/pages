@@ -1,58 +1,129 @@
-<!-- Stephanie's portfolio assignment HTML. Contact page -->
+<!-- Stephanie's Bootstrap portfolio -->
 <!DOCTYPE html>
 <html lang="en-us">
-<!-- Head -->
-<head>
-  <meta charset="UTF-8">
-  <title>Index page for portfolio website</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-</head>
-<!-- Body -->
-<body>
-        <header>
-          <section id="headersection">
-              <div id="aside1">Stephanie Long</div>
-                  <nav class="nav">
-                      <ul>
-                          <li><a href="index.html">About</a></li>
-                          <li><a href="portfolio.html">Portfolio</a></li>
-                          <li><a href="contact.html">Contact</a></li>
-                      </ul>
-                  </nav>
-              </div>
-          </section>
-        </header>
-        <hr>
 
-<!--Main Section -->
-<section id="full2">
-        <div id="aside4">
-              <h1>Contact</h1>
-              <hr>
-              <div>
-              <form id="contact-form">
-                    <ul>
-                      <li>
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" placeholder="John Smith" required="required">
-                      </li>
-                      <li>
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
-                      </li>
-                      <li>
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" required="required"></textarea>
-                      </li>
-                    </ul>
-                    <input type="submit">
-                  </form>
-                </section>
-          <hr>
-    </section>
-    </body>
-<!-- Footer -->
-      <footer>Copyright ©</footer>
-<!-- Fin -->
-    </html>
+<head>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta charset="UTF-8">
+  <title>Bootstrap Portfolio</title>
+  <script src="https://use.fontawesome.com/2214a7171f.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+</head>
+
+<body>
+  <!-- Navagation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container p-0">
+      <a class="navbar-brand" href="index.html">Stephanie Long</a>
+      <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNav"
+        data-toggle="collapse" type="button">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">About
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <!-- navbar-nav -->
+      </div>
+      <!-- collapse -->
+    </div>
+    <!-- container -->
+  </nav>
+  <!-- navbar -->
+  <!-- Body -->
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 well">
+        <div class="page-header">
+          <h1>Contact</h1>
+        </div>
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Jane Doe">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="example@gmail.com">
+          </div>
+          <div class="form-group">
+            <label for="textarea">Message</label>
+            <textarea id="textarea" class="form-control" rows="10"></textarea>
+          </div>
+          <button type="submit" class="btn btn-default btn-lg">Submit</button>
+        </form>
+      </div>
+      <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <!-- card height fix -->
+            <div class="card p-0">
+              <div class="card-header">
+                Connect with me
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-4 p-1">
+                    <a class="fa-stack fa-2x mx-auto d-block" href="https://github.com/smlong203" target="_blank">
+                      <i class="fa fa-square fa-stack-2x btn-outline-dark"></i>
+                      <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                    </a>
+                  </div>
+                  <div class="col-4 p-1">
+                    <a class="fa-stack fa-2x mx-auto d-block" href="https://www.linkedin.com/in/stephanielong203/" target="_blank">
+                      <i class="fa fa-square fa-stack-2x btn-outline-dark"></i>
+                      <i class="fa fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                    </a>
+                  </div>
+                  <div class="col-4 p-1">
+                    <a class="fa-stack fa-2x mx-auto d-block" href="https://stackexchange.com/users/14010469/stephanie-m-long" target="_blank">
+                      <i class="fa fa-square fa-stack-2x btn-outline-dark"></i>
+                      <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                    </a>
+                  </div>
+                </div>
+                <!-- /row -->
+              </div>
+              <!-- card-body -->
+            </div>
+            <!-- card -->
+          </div>
+          <!-- col-lg-3 -->
+        </div>
+        <!-- /row justify-content-between -->
+      </div>
+
+      <!-- End main content -->
+
+      <!-- Footer -->
+      <br>
+      <footer class="footer">
+        <br>
+        <div class="container">
+          <span class="text-muted">&copy;Copyright 2018 Stephanie Long</span>
+        </div>
+      </footer>
+      <!-- Javascript -->
+      <br>
+      <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js">
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js">
+      </script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js">
+      </script>
+</body>
+
+</html>
